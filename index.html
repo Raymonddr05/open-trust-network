@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Trust Network</title>
+    <meta name="description" content="An open trust network that aims to make moral good the norm, and moral evil unprofitable, unviable, and rare.">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+        body {
+            background-color: #faf9f6;
+            color: #2a2a28;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 20px;
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            padding: 6vh 24px;
+        }
+        .content {
+            width: 100%;
+            max-width: 36em;
+            margin: auto;
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin: 0 0 1em 0;
+        }
+        .lead {
+            font-weight: 600;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4em 1.6em;
+            margin-top: 2.2em;
+        }
+        .links a {
+            color: #2a2a28;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 0.2em;
+        }
+        .links a:hover {
+            opacity: 0.65;
+        }
+        .copyright {
+            color: #6f6e69;
+            font-size: 0.8em;
+            margin: 1.2em 0 0 0;
+        }
+
+        /* Defined terms: bold, dotted underline, pop-up on hover, tap, or focus */
+        .term {
+            font-weight: 700;
+            text-decoration: underline dotted;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 0.2em;
+            cursor: help;
+            outline: none;
+        }
+        .term:focus-visible {
+            outline: 2px solid #2a2a28;
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        #tip {
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 300px;
+            max-width: calc(100vw - 24px);
+            background: #ffffff;
+            color: #2a2a28;
+            border: 1px solid #e3e1db;
+            border-radius: 8px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+            padding: 12px 14px;
+            font-size: 0.8em;
+            font-weight: 400;
+            line-height: 1.45;
+            text-align: left;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.12s ease;
+        }
+        #tip.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        #tip strong {
+            font-weight: 700;
+        }
+
+        /* Text size changes at fixed screen widths (like Surge), not fluidly */
+        @media (min-width: 600px) {
+            body { font-size: 18px; }
+            main { padding: 8vh 40px; }
+        }
+        @media (min-width: 900px) {
+            body { font-size: 17px; }
+        }
+        @media (min-width: 1200px) {
+            body { font-size: 19px; }
+        }
+        @media (min-width: 1500px) {
+            body { font-size: 21px; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <p class="lead">How many times have you been lied to, cheated, used, or hurt on purpose?</p>
+
+            <p>Almost everyone has experienced <span class="term" tabindex="0" data-term="Moral evil" data-def="Knowingly turning someone else’s trust, weakness, fear, belongings, or body against them, without their free and fully informed yes. It is evil whether the gain goes to you, to someone else, or to no one. Not looking at what you are doing, or lying to yourself about it, does not make it less evil.">moral evil</span>. Many have also watched someone get away with it.</p>
+
+            <p>More people tend to do what gets rewarded. AI and robots will likely learn from what we do.</p>
+
+            <p>So what kind of future do we choose?</p>
+
+            <p>One where <span class="term" tabindex="0" data-term="Moral good" data-def="Knowingly giving someone else the truth, a free choice, a fair deal, and real help, even when it costs you, and doing it for their benefit. It requires being honest with yourself about your own motives. Moral good does not require ignoring yourself. A fair deal is fair to you too.">moral good</span> is rewarded and moral evil is not? Or one where moral evil is rewarded, and moral good often is not?</p>
+
+            <p>The vision is a world where everyone is kept safe, left free, treated fairly, and helped to grow, belong, and contribute by one another. In that world, moral good is the norm, and moral evil is unprofitable, unviable, and rare.</p>
+
+            <p>I’m building an open trust network that aims to make the vision real globally, fast, in a way that it outlasts me.</p>
+
+            <p>Join me, and let’s get this right.</p>
+
+            <nav class="links">
+                <a href="https://provensuccess.org/My_Open_Manifesto.pdf" target="_blank" rel="noopener">My Open Manifesto</a>
+                <a href="https://provensuccess.org/Grant_Proposal_1.pdf" target="_blank" rel="noopener">Grant Proposal</a>
+                <a href="https://provensuccess.org/Rough_Timeline_Plan.pdf" target="_blank" rel="noopener">Rough Timeline Plan</a>
+                <a href="mailto:ray@provensuccess.org">Contact</a>
+            </nav>
+
+            <p class="copyright">Open Trust Network &copy; 2026</p>
+        </div>
+    </main>
+
+    <div id="tip" role="tooltip"></div>
+
+    <script>
+        (function () {
+            var tip = document.getElementById('tip');
+            var terms = document.querySelectorAll('.term');
+            var active = null;
+
+            function place(el) {
+                var r = el.getBoundingClientRect();
+                var w = tip.offsetWidth;
+                var h = tip.offsetHeight;
+                var gap = 10;
+                var left = r.left + r.width / 2 - w / 2;
+                left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+                var top = r.top - h - gap;
+                if (top < 12) { top = r.bottom + gap; }
+                tip.style.left = left + 'px';
+                tip.style.top = top + 'px';
+            }
+
+            function show(el) {
+                active = el;
+                tip.innerHTML = '<strong>' + el.getAttribute('data-term') + ':</strong> ' + el.getAttribute('data-def');
+                tip.classList.add('show');
+                place(el);
+                el.setAttribute('aria-describedby', 'tip');
+            }
+
+            function hide() {
+                if (active) { active.removeAttribute('aria-describedby'); }
+                active = null;
+                tip.classList.remove('show');
+            }
+
+            terms.forEach(function (el) {
+                el.addEventListener('mouseenter', function () { show(el); });
+                el.addEventListener('mouseleave', hide);
+                el.addEventListener('focus', function () { show(el); });
+                el.addEventListener('blur', hide);
+                el.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    if (active === el && tip.classList.contains('show') && e.detail > 0 && 'ontouchstart' in window) {
+                        hide();
+                    } else {
+                        show(el);
+                    }
+                });
+            });
+
+            document.addEventListener('click', hide);
+            window.addEventListener('scroll', function () { if (active) { place(active); } }, { passive: true });
+            window.addEventListener('resize', function () { if (active) { place(active); } });
+        })();
+    </script>
+</body>
+</html>

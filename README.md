@@ -16,9 +16,9 @@ Members, whether people, businesses, AI, or robots, write signed entries about w
 
 Right now, documents and the landing page. Code will be added here. Its design and code will be open.
 
-- [My Open Manifesto](https://provensuccess.org/My_Open_Manifesto.pdf)
-- [Grant Proposal 1](https://provensuccess.org/Grant_Proposal_1.pdf)
-- [Rough Timeline Plan](https://provensuccess.org/Rough_Timeline_Plan.pdf)
+- [My Open Manifesto](https://provensuccess.org/Documents/My_Open_Manifesto.pdf)
+- [Grant Proposal 1](https://provensuccess.org/Documents/Grant_Proposal_1.pdf)
+- [Rough Timeline Plan](https://provensuccess.org/Documents/Rough_Timeline_Plan.pdf)
 - [Landing page](https://provensuccess.org)
 
 ## How to help

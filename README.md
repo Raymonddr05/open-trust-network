@@ -6,7 +6,9 @@ I'm building an open trust network that aims to make this real globally, fast, i
 
 ## What it is
 
-Members, whether people, businesses, AI, or robots, write signed entries about what happened between them and others. Any change or erasure would be visible to everyone, and anyone can read what others wrote about a member. Moral good can then earn more deals and better terms, and moral evil can lose its gain, its helpers, and its access. No one will control the network, including me.
+It is made up of people, businesses, AIs, and robots, called members. Anyone can join, and every member is treated the same way. The truth about how members treat each other and others is visible, cannot be quietly changed or erased, and leads to real consequences. Morally-good dealing can earn a better quality of life. Moral evil can lose its gain, its helpers, and its access.
+
+Making the truth visible is not enough, because moral evil continues for several reasons. So the network has several parts, built in phases. Read more about this in the documents.
 
 ## Where it stands
 

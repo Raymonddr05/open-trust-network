@@ -1,14 +1,10 @@
 # Open Trust Network
 
-A world where everyone is kept safe, left free, treated fairly, and helped to grow, belong, and contribute by one another. In that world, moral good is the norm, and moral evil is unprofitable, unviable, and rare.
+The vision is a world where everyone is kept safe, left free, treated fairly, and helped to grow, belong, and contribute by one another. In that world, moral good is the norm, and moral evil is unprofitable, unviable, and rare.
 
-I'm building an open trust network that aims to make this real globally, fast, in a way that outlasts me.
+The mission is to build an open trust network of people, businesses, AIs, and robots where moral good is rewarded and moral evil is not.
 
-## What it is
-
-It is made up of people, businesses, AIs, and robots, called members. Anyone can join, and every member is treated the same way. The truth about how members treat each other and others is visible, cannot be quietly changed or erased, and leads to real consequences. Morally-good dealing can earn a better quality of life. Moral evil can lose its gain, its helpers, and its access.
-
-Making the truth visible is not enough, because moral evil continues for several reasons. So the network has several parts, built in phases. Read more about this in the documents.
+Read more in the documents.
 
 ## Where it stands
 

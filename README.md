@@ -1,5 +1,7 @@
 # Open Trust Network
 
+The problem to solve is moral evil being rewarded.
+
 The vision is a world where everyone is kept safe, left free, treated fairly, and helped to grow, belong, and contribute by one another. In that world, moral good is the norm, and moral evil is unprofitable, unviable, and rare.
 
 The mission is to build an open trust network of people, businesses, AIs, and robots where moral good is rewarded and moral evil is not.
